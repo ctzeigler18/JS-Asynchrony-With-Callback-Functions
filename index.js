@@ -6,8 +6,8 @@ const npc = newNonPlayableCharacter(50, 300)
 
 // have the NPC start walking east immediately
 
-npc.walkWest(500, () => {
-    npc.walkNorth()                                                   
+npc.walkNorth(1400, () => {
+    npc.walkEast(1200) 
 })
 
 
