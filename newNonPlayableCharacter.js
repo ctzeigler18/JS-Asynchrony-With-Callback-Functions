@@ -35,19 +35,39 @@ function newNonPlayableCharacter(x, y) {
     }
     
 
-    function walkNorth() {
-        direction = 'north'
-        element.src = `./assets/red-character/north.gif`
+    function walkNorth(time, callback) {
+        direction = 'North'
+        element.src = `./assets/green-character/east.gif`
+        setTimeout(() => {
+            stop()
+            if(callback){
+                callback()
+            }
+        }, time)
     }
+    
 
-    function walkWest() {
-        direction = 'west'
-        element.src = `./assets/red-character/west.gif`
+    function walkWest(time, callback) {
+        direction = 'West'
+        element.src = `./assets/green-character/east.gif`
+        setTimeout(() => {
+            stop()
+            if(callback){
+                callback()
+            }
+        }, time)
     }
+    
 
     function walkSouth() {
         direction = 'south'
         element.src = `./assets/red-character/south.gif`
+        setTimeout(() => {
+            stop()
+            if(callback){
+                callback()
+            }
+        }, time)
     }
 
     function stop() {
