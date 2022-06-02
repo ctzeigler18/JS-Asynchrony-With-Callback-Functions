@@ -36,7 +36,7 @@ function newNonPlayableCharacter(x, y) {
     
 
     function walkNorth(time, callback) {
-        direction = 'North'
+        direction = 'north'
         element.src = `./assets/green-character/east.gif`
         setTimeout(() => {
             stop()
@@ -48,7 +48,7 @@ function newNonPlayableCharacter(x, y) {
     
 
     function walkWest(time, callback) {
-        direction = 'West'
+        direction = 'west'
         element.src = `./assets/green-character/east.gif`
         setTimeout(() => {
             stop()
